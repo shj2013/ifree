@@ -1,0 +1,20 @@
+{
+    "name": "ifreegroup/common-class",
+    "description": "ifreeGroup公共库",
+    "authors": [
+        {
+            "name": "suhuajun",
+            "email": "418181705@qq.com"
+        }
+    ],
+    "require": {
+    	 "php": ">=7.0.0"
+
+    },
+
+    "autoload": { 
+        "psr-4": {
+            "ifreeGroup\\": "ifreeGroup/"
+        }
+    }
+}
