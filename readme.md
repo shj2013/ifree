@@ -7,6 +7,7 @@
     > IfreeGroup::createRandomStr(32);//返回随机字符串
     > IfreeGroup::emailPattern($email); //邮箱格式是否正确
     > IfreeGroup::getIPaddress(); //获取客户端的真实地址
+    > IfreeGroup::httpRequest($url,$method,$postfields,$headers); //一般以POST 请求为好
 ```
     /**
     *用于统一API 的输出格式
@@ -99,6 +100,21 @@ IfreeGroup::emailPattern('su@ifreegroup.com');
 use ifreeGroup/IfreeGroup;
 IfreeGroup::getIPaddress();
 返回 IP 地址
+```
+
+```
+    /**
+     * curl 模拟http post/get 请求
+     * @param string $url
+     * @param string $method
+     * @param array $postfields
+     * @param array $headers
+     * @return mixd
+     * @author su@ifreegroup.com
+     * @date 2019/7/24  11:18
+     */
+    use ifreeGroup/IfreeGroup;
+    IfreeGroup::httpRequest();
 ```
 
 
