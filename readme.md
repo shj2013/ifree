@@ -1,11 +1,17 @@
 #当前类库的静态方法有
+
+*方法列表
+    > IfreeGroup::json();
+    > IfreeGroup::createRandomStr();
 ***
+ 
 ```
     /**
     *用于统一API 的输出格式
     *@param string $msg  API 输出的描述
     *@param string $code 状态码
     *@param array $data 返回的业务数据
+    *@return string 返回json 数据
     */
     use ifreeGroup/IfreeGroup;
     IfreeGroup::json($msg,$code,$data);
@@ -57,3 +63,5 @@
         }
     }
 ```
+
+
