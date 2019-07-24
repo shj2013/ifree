@@ -1,8 +1,8 @@
 #当前类库的静态方法有
 
 ***
-    > IfreeGroup::json();
-    > IfreeGroup::createRandomStr();
+    > IfreeGroup::json(); //用于统一API 的输出格式
+    > IfreeGroup::createRandomStr();//返回随机字符串
 
  
 ```
@@ -62,6 +62,18 @@
             }
         }
     }
+```
+
+```
+/**
+*随机数生成
+*@param string $length 随机机数长度 最大值为52
+*@return string 返回随机字符串
+*/
+使用方法
+use ifreeGroup/IfreeGroup;
+IfreeGroup::createRandomStr(32);
+返回的数据为：64d6960e728b4397f47c13d620f6f78d
 ```
 
 
