@@ -1,10 +1,12 @@
 #当前类库的静态方法有
 
 ***
-    > IfreeGroup::json(); //用于统一API 的输出格式
-    > IfreeGroup::createRandomStr();//返回随机字符串
-
- 
+    命名空间 ifreeGroup
+    use ifreeGroup/IfreeGroup
+    > IfreeGroup::json($msg,$code,$data); //用于统一API 的输出格式
+    > IfreeGroup::createRandomStr(32);//返回随机字符串
+    > IfreeGroup::emailPattern($email); //邮箱格式是否正确
+    > IfreeGroup::getIPaddress(); //获取客户端的真实地址
 ```
     /**
     *用于统一API 的输出格式
@@ -74,6 +76,29 @@
 use ifreeGroup/IfreeGroup;
 IfreeGroup::createRandomStr(32);
 返回的数据为：64d6960e728b4397f47c13d620f6f78d
+```
+```
+/**
+*验证邮件格式是否正确
+*@param string $email  邮箱
+*@return bool
+*/
+使用方法：
+use ifreeGroup/IfreeGroup;
+IfreeGroup::emailPattern('su@ifreegroup.com');
+返回的数据为: true;
+
+```
+```
+/**
+*获取客户端的真实地址
+*@param 不用传值，直接调用
+*@return string 直接返回IP 地址
+*/
+使用方法：
+use ifreeGroup/IfreeGroup;
+IfreeGroup::getIPaddress();
+返回 IP 地址
 ```
 
 
