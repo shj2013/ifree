@@ -1,9 +1,9 @@
 #当前类库的静态方法有
 
-*方法列表
+***
     > IfreeGroup::json();
     > IfreeGroup::createRandomStr();
-***
+
  
 ```
     /**
